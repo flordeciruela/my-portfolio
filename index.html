@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <header>
+
+      <!--
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Wendy Reyes</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    -->
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage"><span class="pink">WR</span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="home" class="container-fluid jumbotron">
+      <div class="container">
+        <h1 class="text-typing">Hola!!</h1>
+        <h2 class="text-typing">Mi nombre es Wendy Reyes.</h2>
+        <h2 class="text-typing">Front-end Developer Jr.</h2>
+      </div>
+    </div>
+
+    <div class="jumbotron" id="about">
+      <div class="container text-center">
+        <h2 class="pink">Sobre mí</h2>
+        <p><i class="pink">"</i> Conocí el mundo de la programación a través de Laboratoria; Creo en el poder de mejorar la vida de las personas través del desarrollo de productos digitales, las nuevas tecnologías, la música, la innovación y el emprendimiento.</p>
+        <p>Trabajé como backoffice y durante mas de 2 años en call center, siendo empresas en constande cambio donde me brindaron un proceso de formación en el trato a los clientes y el uso de multiples herramientas, aprendí a adaptarme, y desempeñar mi labor con buena calidad de atención a los usuarios.</p>
+        <p>Quisiera formar parte de un equipo como desarrolladora front-end que me permita desarrollar con Javascript, aprender otros lenguajes de programación, y aprender a desarrollar aplicaciones para móviles. <i class="pink">"</i></p>
+      </div>
+    </div>
+
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+      <h2 class="pink">Portafolio</h2><br>
+      <h4>Proyectos desarrollados</h4>
+        <div class="row text-center slideanim">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="assets/img/pinterest.jpg" width="400" height="300">
+              <p><strong>Pinterest</strong></p>
+              <p>Réplica utilizando Api Pinterest</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="assets/img/yape.jpg" width="400" height="300">
+              <p><strong>Yape</strong></p>
+              <p>Aplicación del BCP</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="assets/img/gasfinder.jpg" alt="San Francisco" width="400" height="300">
+              <p><strong>Gasfinder</strong></p>
+              <p>Aplicación móvil que localiza estaciones de gasolina cercanas.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center pink">CONTACTO</h2>
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <p><a href="#">Descarga mi C.V.</a></p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Cercado de Lima, Perú</p>
+          <p><span class="glyphicon glyphicon-phone"></span> 985766061</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> wendy.reyessan@gmail.com</p>
+        </div>
+        <div class="col-sm-5 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>Made By <a href="#">Wendy Reyes Santana</a></p>
+    </footer>
+
+    <script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="assets/js/app.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+.pink {
+  color: #FF4E57;
+  font-size: 30px;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+}
+
+nav .pink {
+  border-bottom: 2px solid #FF4E57;
+  padding: 0.2em;
+}
+
+.text-typing{
+  color: yellow;
+  font-family: 'Courier';
+  overflow:hidden;
+  white-space:nowrap;
+  width: 3em;
+  -webkit-animation: type 1s steps(6), blink 1s linear infinite;
+  margin: auto;
+  padding:0;
+  border-right: .1em solid;
+  line-height: 1.3em;
+}
+
+h1.text-typing{
+  color: #ffffff;
+  font-size: 100px;
+}
+
+.text-typing:nth-child(2){
+  width:15em;
+  -webkit-animation: type2 3s steps(24), blink 1s linear infinite;
+}
+.text-typing:nth-child(3){
+  width: 14em;
+  -webkit-animation: type2 6s steps(21), blink 1s linear infinite;
+}
+@keyframes type{
+  from{width:0}
+}
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+@keyframes blink{
+  0%,100%{border-color:transparent}
+  50%{border-color: #5eddf9}
+}
+
+#home {
+  height: 662px;
+  padding: 0;
+  background-image: url(../img/sunset-home.jpg);
+  background-position: -10% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:grayscale(100%);
+  margin-bottom: 0;
+  padding-top: 13em;
+}
+
+#about {
+  height: 625px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+#about h2,
+#portfolio h2,
+#portfolio h4,
+#contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  line-height: 2 !important;
+  letter-spacing: 4px;
+}
+
+#about p {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  font-size: 16px;
+}
+
+#portfolio {
+  height: 630px;
+  margin: 0;
+  background-image: url(../img/pexels.jpeg);
+  background-position: -10% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:grayscale(100%);
+  padding-top: 3em;
+}
+
+#portfolio .row {
+  padding-top: 30px;
+}
+
+#contact {
+  height: 570px;
+}
+
+#contact .row {
+  padding-top: 30px;
+}
+
+#contact h2 {
+
+}
