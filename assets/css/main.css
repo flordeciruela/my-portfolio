@@ -29,14 +29,18 @@ nav .pink {
   line-height: 1.3em;
 }
 
-h1.text-typing{
+h1.title{
   color: #ffffff;
   font-size: 100px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 20px;
+	font-weight: bold;
 }
 
 .text-typing:nth-child(2){
-  width:15em;
-  -webkit-animation: type2 3s steps(24), blink 1s linear infinite;
+  width:14em;
+  -webkit-animation: type2 3s steps(21), blink 1s linear infinite;
+	padding: 0;
 }
 .text-typing:nth-child(3){
   width: 14em;
@@ -64,7 +68,7 @@ h1.text-typing{
   background-repeat: no-repeat;
   filter:grayscale(0%);
   margin-bottom: 0;
-  padding-top: 13em;
+  padding-top: 16em;
 }
 
 #about {
@@ -73,26 +77,36 @@ h1.text-typing{
   background-color: #ffffff;
 }
 
-#about h2,
 #portfolio h2,
-#portfolio h4,
-#contact h2 {
+#portfolio h4 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   line-height: 2 !important;
   letter-spacing: 4px;
+	font-weight: bold;
 }
 
 #about p {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 4px;
-  font-size: 16px;
+  font-size: 14px;
+	color: #333131;
+}
+
+#about a {
+	text-decoration: none;
+	color: #333131;
+}
+
+#about i {
+	font-size: 35px;
+	margin: auto 10px;
 }
 
 #portfolio {
-  height: 630px;
+  height: 700px;
   margin: 0;
-  background-image: url(../img/pexels.jpeg);
+  background-image: url(../img/wall-3.jpg);
   background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,10 +118,12 @@ h1.text-typing{
   padding-top: 30px;
 }
 
-#contact {
-  height: 570px;
+#portfolio .item {
+	cursor: pointer;
+	background: none !important;
 }
 
-#contact .row {
-  padding-top: 30px;
+footer a {
+	text-decoration: none;
+	color: #333131;
 }

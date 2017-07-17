@@ -15,4 +15,16 @@ $(document).ready(function(){
     }
   });
 
+	$("#pinterest").on('click', function(event) {
+		window.open('https://github.com/RuthMeryCardenas/Proyecto-Pinterest');
+	});
+
+	$("#yape").on('click', function(event) {
+		window.open('https://yape-wreyes.herokuapp.com/');
+	});
+
+	$("#gasfinder").on('click', function(event) {
+		window.open('https://flordeciruela.github.io/gasfinder/');
+	});
+
 })
