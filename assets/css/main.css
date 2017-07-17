@@ -1,19 +1,24 @@
-.pink {
+* {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 4px;
+}
+
+.cyan {
   color: #1BCBFF;
   font-size: 30px;
 }
 
+.text-white {
+  color: #ffffff;
+}
+
+/*Header*/
 nav {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 12px !important;
   line-height: 1.42857143 !important;
   letter-spacing: 4px;
-}
-
-nav .pink {
-  border-bottom: 2px solid #1BCBFF;
-  padding: 0.2em;
 }
 
 .text-typing{
@@ -42,10 +47,7 @@ h1.title{
   -webkit-animation: type2 3s steps(21), blink 1s linear infinite;
 	padding: 0;
 }
-.text-typing:nth-child(3){
-  width: 14em;
-  -webkit-animation: type2 6s steps(21), blink 1s linear infinite;
-}
+
 @keyframes type{
   from{width:0}
 }
@@ -59,6 +61,7 @@ h1.title{
   50%{border-color: #1BCBFF}
 }
 
+/*Home*/
 #home {
   height: 662px;
   padding: 0;
@@ -71,19 +74,20 @@ h1.title{
   padding-top: 16em;
 }
 
+#home h3 {
+	color: #ffffff;
+	margin-top: 6em;
+}
+
+#home a {
+	color: #ffffff;
+}
+
+/*About*/
 #about {
   height: 625px;
   margin: 0;
   background-color: #ffffff;
-}
-
-#portfolio h2,
-#portfolio h4 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  line-height: 2 !important;
-  letter-spacing: 4px;
-	font-weight: bold;
 }
 
 #about p {
@@ -103,6 +107,15 @@ h1.title{
 	margin: auto 10px;
 }
 
+/*Portfolio*/
+#portfolio h2,
+#portfolio h4 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+	font-weight: bold;
+}
+
 #portfolio {
   height: 700px;
   margin: 0;
@@ -118,12 +131,26 @@ h1.title{
   padding-top: 30px;
 }
 
+#portfolio .portfolio-title {
+	background-color: rgba(8, 7, 7, 0.5);
+	padding: 2em;
+	display: inline-block;
+}
+
 #portfolio .item {
 	cursor: pointer;
-	background: none !important;
+}
+
+/*footer*/
+footer.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 footer a {
-	text-decoration: none;
 	color: #333131;
+}
+
+footer h6:nth-child(3) {
+	margin-top: 3em;
 }

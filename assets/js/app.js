@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
-  //Tooltip
   $('[data-toggle="tooltip"]').tooltip();
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, #home a, footer a[href='#myPage']").on('click', function(event) {
   if (this.hash !== "") {
     event.preventDefault();
     var hash = this.hash;
@@ -16,7 +15,7 @@ $(document).ready(function(){
   });
 
 	$("#pinterest").on('click', function(event) {
-		window.open('https://github.com/RuthMeryCardenas/Proyecto-Pinterest');
+		window.open('https://proyecto-pinterest.herokuapp.com/');
 	});
 
 	$("#yape").on('click', function(event) {
