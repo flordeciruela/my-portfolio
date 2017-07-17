@@ -120,7 +120,6 @@ h1.title{
   height: 700px;
   margin: 0;
   background-image: url(../img/wall-3.jpg);
-  background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   filter:grayscale(0%);
@@ -132,9 +131,10 @@ h1.title{
 }
 
 #portfolio .portfolio-title {
-	background-color: rgba(8, 7, 7, 0.5);
+	background-color: rgba(8, 7, 7, 0.6);
 	padding: 2em;
 	display: inline-block;
+	margin-bottom: 1em
 }
 
 #portfolio .item {
@@ -153,4 +153,11 @@ footer a {
 
 footer h6:nth-child(3) {
 	margin-top: 3em;
+}
+
+@media only screen and (max-width: 900px) {
+	#home {
+	  height: auto;
+	  background-position: center;
+	}
 }
