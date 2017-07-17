@@ -161,3 +161,23 @@ footer h6:nth-child(3) {
 	  background-position: center;
 	}
 }
+
+/*Yape*/
+.carousel {
+  height: 100vh;
+  width: 100%;
+  overflow:hidden;
+}
+.carousel .carousel-inner,
+.carousel .item {
+  height:100%;
+	width: 100%;
+}
+
+.carousel-control .glyphicon {
+	color: #333131;
+}
+
+.carousel-control {
+	width: 2em;
+}
