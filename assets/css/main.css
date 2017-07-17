@@ -1,5 +1,5 @@
 .pink {
-  color: #FF4E57;
+  color: #1BCBFF;
   font-size: 30px;
 }
 
@@ -12,12 +12,12 @@ nav {
 }
 
 nav .pink {
-  border-bottom: 2px solid #FF4E57;
+  border-bottom: 2px solid #1BCBFF;
   padding: 0.2em;
 }
 
 .text-typing{
-  color: yellow;
+  color: #ffffff;
   font-family: 'Courier';
   overflow:hidden;
   white-space:nowrap;
@@ -52,7 +52,7 @@ h1.text-typing{
 }
 @keyframes blink{
   0%,100%{border-color:transparent}
-  50%{border-color: #5eddf9}
+  50%{border-color: #1BCBFF}
 }
 
 #home {
@@ -62,7 +62,7 @@ h1.text-typing{
   background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  filter:grayscale(100%);
+  filter:grayscale(0%);
   margin-bottom: 0;
   padding-top: 13em;
 }
@@ -96,7 +96,7 @@ h1.text-typing{
   background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  filter:grayscale(100%);
+  filter:grayscale(0%);
   padding-top: 3em;
 }
 
@@ -110,8 +110,4 @@ h1.text-typing{
 
 #contact .row {
   padding-top: 30px;
-}
-
-#contact h2 {
-
 }

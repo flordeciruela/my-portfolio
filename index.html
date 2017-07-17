@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>Wendy Reyes Santana</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="icon" href="assets/img/wrblack.jpg" type="image/jpg">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <header>
-
       <!--
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -37,14 +38,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#myPage"><span class="pink">WR</span></a>
+            <a class="" href="#myPage">
+							<img src="assets/img/wrblack.jpg" alt="Logo" height="50px">
+						</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+            <ul class="nav navbar-nav navbar-right text-uppercase">
+              <li><a href="#home">inicio</a></li>
+              <li><a href="#about">sobre mí</a></li>
+              <li><a href="#portfolio">portafolio</a></li>
+              <li><a href="#contact">contacto</a></li>
             </ul>
           </div>
         </div>
@@ -52,16 +55,20 @@
     </header>
 
     <div id="home" class="container-fluid jumbotron">
-      <div class="container">
-        <h1 class="text-typing">Hola!!</h1>
-        <h2 class="text-typing">Mi nombre es Wendy Reyes.</h2>
-        <h2 class="text-typing">Front-end Developer Jr.</h2>
-      </div>
+			<div class="row">
+				<div class="col-xs-12">
+					<!--
+					<h1 class="text-typing">Hola!!</h1>
+					<h2 class="text-typing">Mi nombre es Wendy Reyes.</h2>
+					<h2 class="text-typing">Front-end Developer Jr.</h2>
+				-->
+				</div>
+			</div>
     </div>
 
     <div class="jumbotron" id="about">
       <div class="container text-center">
-        <h2 class="pink">Sobre mí</h2>
+        <img src="assets/img/cyan-logo.jpg" alt="Logo cyan">
         <p><i class="pink">"</i> Conocí el mundo de la programación a través de Laboratoria; Creo en el poder de mejorar la vida de las personas través del desarrollo de productos digitales, las nuevas tecnologías, la música, la innovación y el emprendimiento.</p>
         <p>Trabajé como backoffice y durante mas de 2 años en call center, siendo empresas en constande cambio donde me brindaron un proceso de formación en el trato a los clientes y el uso de multiples herramientas, aprendí a adaptarme, y desempeñar mi labor con buena calidad de atención a los usuarios.</p>
         <p>Quisiera formar parte de un equipo como desarrolladora front-end que me permita desarrollar con Javascript, aprender otros lenguajes de programación, y aprender a desarrollar aplicaciones para móviles. <i class="pink">"</i></p>
@@ -97,29 +104,17 @@
     </div>
 
     <div id="contact" class="container-fluid bg-grey">
-      <h2 class="text-center pink">CONTACTO</h2>
+      <h2 class="text-center pink text-uppercase">contacto</h2>
       <div class="row text-center">
-        <div class="col-sm-6">
-          <p><a href="#">Descarga mi C.V.</a></p>
-          <p><span class="glyphicon glyphicon-map-marker"></span>Cercado de Lima, Perú</p>
+        <div class="col-sm-12">
+          <p><a href="assets/docs/CV.docx">Descarga mi C.V.</a></p>
           <p><span class="glyphicon glyphicon-phone"></span> 985766061</p>
           <p><span class="glyphicon glyphicon-envelope"></span> wendy.reyessan@gmail.com</p>
-        </div>
-        <div class="col-sm-5 slideanim">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-          </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-default pull-right" type="submit">Send</button>
-            </div>
-          </div>
+					<p>
+						<a href="https://www.linkedin.com/in/wendy-reyes-santana/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						<a href="https://github.com/flordeciruela"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="skype:usuario?chat"><i class="fa fa-skype" aria-hidden="true"></i></a>
+					</p>
         </div>
       </div>
     </div>
@@ -128,7 +123,7 @@
       <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
       </a>
-      <p>Made By <a href="#">Wendy Reyes Santana</a></p>
+      <p>Copyright © 2016 - <a href="#">Wendy Reyes Santana</a></p>
     </footer>
 
     <script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
