@@ -16,7 +16,7 @@
 @keyframes slide {
   0% {
     opacity: 0;
-    transform: translateY(70%);
+    transform: translateY(50%);
   }
   100% {
     opacity: 1;
@@ -27,7 +27,7 @@
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    -webkit-transform: translateY(50%);
   }
   100% {
     opacity: 1;
@@ -41,6 +41,11 @@
 
 .text-white {
   color: #ffffff;
+}
+
+.glyphicon-chevron-down,
+.glyphicon-chevron-up {
+	font-size: 1.8em;
 }
 
 /*Header*/
@@ -117,8 +122,13 @@ h1.title{
 
 /*About*/
 #about {
-  margin: 0;
+  margin-top: 2.5em;
+	margin-bottom: 4em;
   background-color: #ffffff;
+}
+
+#about .row div {
+
 }
 
 #about p {
@@ -128,19 +138,8 @@ h1.title{
 	color: #333131;
 }
 
-#about a {
-	text-decoration: none;
-	color: #333131;
-}
-
-#about i {
-	font-size: 3.5em;
-	margin: 0.4em;
-}
-
 /*Portfolio*/
-#portfolio h2,
-#portfolio h4 {
+#portfolio h2 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -148,26 +147,29 @@ h1.title{
 }
 
 #portfolio {
-  margin: 0;
+  padding: 7em 0;
   background-image: url(../img/wall-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#portfolio .row {
-	background-color: rgba(8, 7, 7, 0.4);
+#portfolio .container .row {
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 #portfolio .portfolio-title {
 	padding: 2em;
 	display: inline-block;
-	margin-top: 3em;
-	margin-bottom: 4em;
+	margin-bottom: 1em;
 }
 
 #portfolio .item {
 	cursor: pointer;
-	margin-bottom: 4em
+	margin-bottom: 4em;
+}
+
+#portfolio .item div {
+	padding: 0;
 }
 
 #portfolio .item-img {
@@ -181,9 +183,9 @@ h1.title{
 }
 
 #portfolio a {
-	text-decoration: none;
-	color: #ffffff;
-	text-decoration-line: underline;
+	margin-top: 1em;
+	font-size: 1.2em;
+	letter-spacing: 0;
 }
 
 div#pinterest {
@@ -198,18 +200,43 @@ div#labcar {
 	background-image: url(../img/labcar.png);
 }
 
+/*contact*/
+#contact {
+	background-color: #ffffff;
+	padding-top: 4.5em;
+	padding-bottom: 5em;
+}
+
+#contact h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
+#contact a {
+	text-decoration: none;
+	color: #333131;
+}
+
+#contact .glyphicon-chevron-up {
+	margin-top: 1.5em;
+}
+
+#contact i {
+	font-size: 3.5em;
+	margin: 0.4em;
+}
+
 /*footer*/
 footer.container-fluid {
+	background-color: #222222;
+	color: #ffffff;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
 
-footer a {
-	color: #333131;
-}
-
-footer h6:nth-child(3) {
-	margin-top: 3em;
+footer h6 {
 	letter-spacing: 1.5px;
 }
 
