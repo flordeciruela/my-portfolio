@@ -22,8 +22,8 @@ $(document).ready(function(){
 		window.open('https://yape-wreyes.herokuapp.com/');
 	});
 
-	$("#gasfinder").on('click', function(event) {
-		window.open('https://flordeciruela.github.io/gasfinder/');
+	$("#labcar").on('click', function(event) {
+		window.open('https://flordeciruela.github.io/Labcar/');
 	});
 
 })
