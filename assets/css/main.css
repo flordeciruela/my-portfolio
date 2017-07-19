@@ -127,10 +127,6 @@ h1.title{
   background-color: #ffffff;
 }
 
-#about .row div {
-
-}
-
 #about p {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1.5px;
@@ -166,6 +162,8 @@ h1.title{
 #portfolio .item {
 	cursor: pointer;
 	margin-bottom: 4em;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #portfolio .item div {
@@ -190,6 +188,10 @@ h1.title{
 
 div#pinterest {
 	background-image: url(../img/pinterest.png);
+}
+
+div#pinterest:hover {
+
 }
 
 div#yape {
