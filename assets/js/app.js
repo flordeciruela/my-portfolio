@@ -24,7 +24,7 @@ $(document).ready(function(){
 	  });
 	});
 
-	$("#pinterest").on('click', function(event) {
+	$("#flash-bitacora").on('click', function(event) {
 		window.open('https://proyecto-pinterest.herokuapp.com/');
 	});
 
