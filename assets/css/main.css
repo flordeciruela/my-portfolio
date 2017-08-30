@@ -498,6 +498,10 @@ footer h6 {
 		padding-bottom: 2em;
 	}
 
+	#contact p {
+		letter-spacing: 0.1rem;
+	}
+
 }
 
 /*Yape*/
