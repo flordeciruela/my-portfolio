@@ -472,11 +472,6 @@ footer h6 {
 	letter-spacing: 1.5px;
 }
 
-#google_translate_element {
-	text-align: center;
-	margin: 10px auto;
-}
-
 @media only screen and (max-width: 900px) {
 	h2 {
 		font-size:1em;
