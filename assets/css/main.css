@@ -213,9 +213,15 @@ h1.title{
 
 /*skills*/
 #skills {
-	padding-top: 5em;
-	padding-bottom: 3em;
+	padding-top: 7em;
+	padding-bottom: 7em;
 	background: #D2F9E1;
+}
+
+#skills .row {
+	padding-top: 5em;
+	padding-bottom: 1em;
+	background: #FFFFFF;
 }
 
 #skills h2 {
