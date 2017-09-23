@@ -82,9 +82,6 @@ body {
     100% {transform: translateY(5px);}
 }
 
-/*Home*/
-
-
 /*Header*/
 nav.navbar-inverse {
   font-family: 'Montserrat', sans-serif;
@@ -193,7 +190,7 @@ h1.title{
 #about {
   padding-top: 4em;
 	padding-bottom: 4em;
-	background-color: #f0f2f2;
+	background-color: #FFFFFF;
 }
 
 #about .row {
@@ -216,9 +213,9 @@ h1.title{
 
 /*skills*/
 #skills {
-	background-color: #ffffff;
 	padding-top: 5em;
-	padding-bottom: 6em;
+	padding-bottom: 3em;
+	background: #D2F9E1;
 }
 
 #skills h2 {
@@ -229,6 +226,10 @@ h1.title{
 	margin-bottom: 2.5em;
 }
 
+#skills .item {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+}
 /*
 #skills section {
 	width: 61.8%;
@@ -367,15 +368,23 @@ h1.title{
 
 #portfolio {
   padding: 7em 0;
-	background-color: #64B3B7;
-  background-image: url(../img/wall-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+	background-color: #FFFFFF;
 }
 
 #portfolio .container .row {
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 0 60px;
+	background-color: #FCEEE3;
+	padding: 2.7em 60px;
+}
+
+#portfolio .btn {
+	border: none;
+	border-radius: 25px;
+	background-color: #b1b6b8;
+	color: #FFFFFF;
+	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 
 #portfolio .portfolio-title {
@@ -401,7 +410,7 @@ h1.title{
 }
 
 #portfolio p {
-	color: #ffffff;
+	color: #333;
 	font-size: 16px;
 }
 
@@ -474,7 +483,11 @@ footer h6 {
 
 @media only screen and (max-width: 900px) {
 	h2 {
-		font-size:1em;
+		font-size: 2rem;
+	}
+
+	header #nav-logo {
+		margin-left: 12px;
 	}
 
 	#home {
@@ -488,14 +501,38 @@ footer h6 {
 		text-align: center;
 	}
 
+	#about #cyan-logo {
+		width: 50%;
+	}
+
+	#skills .item {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	#portfolio .item-img {
+		margin-top: 1em;
+	}
+
+	#portfolio p {
+		font-size: 1.5rem;
+		letter-spacing: 2px;
+	}
+
 	#portfolio .container .row {
 		padding: 0;
 		text-align: center;
 	}
 
-	#skills .item {
-		padding-top: 2em;
-		padding-bottom: 2em;
+	#portfolio .portfolio-title {
+		padding-bottom: 0;
+	}
+
+	#portfolio h3 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
 	}
 
 	#contact p {
