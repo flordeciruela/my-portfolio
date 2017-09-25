@@ -14,6 +14,10 @@ $(document).ready(function(){
     }
   });
 
+  $(".navbar a").on('click', function(event) {
+    $(".navbar-collapse").removeClass('in');
+  });
+
   var position = 0;
   var interval = setInterval(function() {
   position -= 1;
@@ -34,8 +38,8 @@ $(document).ready(function(){
 	  });
 	});
 
-	$("#flash-bitacora").on('click', function(event) {
-		window.open('https://proyecto-pinterest.herokuapp.com/');
+	$("#flash").on('click', function(event) {
+		window.open('https://flordeciruela.github.io/Flash-bitacora/');
 	});
 
 	$("#yape").on('click', function(event) {
@@ -46,21 +50,4 @@ $(document).ready(function(){
 		window.open('https://flordeciruela.github.io/Labcar/');
 	});
 
-  /*
-  var x = $(".anim");
-  // Start the animation with JavaScript
-  function myFunction() {
-      x.style.WebkitAnimation = "diagon 1s 1"; // Code for Chrome, Safari and Opera
-      x.style.animation = "diagon 1s 1";       // Standard syntax
-  }
-
-  for (i = 0; i < x.length; i++) {
-      x[i].addEventListener("webkitAnimationEnd", myEndFunction);
-  	x[i].addEventListener("animationend", myEndFunction);
-  }
-
-  function myEndFunction() {
-      this.className += " ated";
-  }
-  */
 })

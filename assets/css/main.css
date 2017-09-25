@@ -7,6 +7,19 @@ body {
 	background-color: #ffffff;
 }
 
+hr.hr-title {
+	border-top: 1px solid #333;
+	width: 5rem;
+	margin-bottom: 8%;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+
 /*Deslizar elementos*/
 .slideanim {visibility:hidden;}
 .slide {
@@ -44,7 +57,7 @@ body {
 }
 
 .text-white {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .fa-angle-double-down,
@@ -86,9 +99,9 @@ body {
 nav.navbar-inverse {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  font-size: 12px !important;
+  font-size: 11px !important;
   line-height: 1.42857143 !important;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 	background-color: rgba(34, 34, 34, 0.8);
 	border: none;
 }
@@ -162,7 +175,6 @@ h1.title{
   background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  filter:grayscale(0%);
   margin-bottom: 0;
   padding-top: 14em;
 	-webkit-animation: animatedBackground 2s linear infinite;
@@ -213,173 +225,43 @@ h1.title{
 
 /*skills*/
 #skills {
-	padding-top: 7em;
-	padding-bottom: 7em;
-	background: #D2F9E1;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	background-image: url(../img/coffee.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #skills .row {
-	padding-top: 5em;
-	padding-bottom: 1em;
-	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.4);
 }
 
-#skills h2 {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	font-weight: bold;
-	margin-bottom: 2.5em;
+#skills .row-1 {
+	padding-top: 6%;
+}
+
+#skills .row-2 {
+	padding-bottom: 1em;
+}
+
+#skills hr {
+	margin-bottom: 6%;
 }
 
 #skills .item {
 	margin-top: 2rem;
 	margin-bottom: 4rem;
 }
-/*
-#skills section {
-	width: 61.8%;
-	margin: 0 auto;
-}
 
-#skills ul {
-	font-size: 1.25em;
-	padding: 0;
-}
-
-#skills li {
-	list-style: none;
-	display: block;
-	height: 2.63em;
-	background-color: silver;
-	background-color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 1em;
-	margin-right: 38%;
-	padding-left: 3em;
-	line-height: 2.6em;
-	white-space: nowrap;
-	border-radius: 1.3em 0 0 1.3em;
-	position: relative;
-	box-shadow: 1px 1px rgba(255, 255, 255, 0.15);
-	animation: moveout;
-	animation-duration: 1.5s;
-	animation-delay: 0.5s;
-}
-
-#skills li.anim.ated {
-	width: 62%;
-}
-
-#skills li::before {
-	content: '\2713';
-	display: block;
-	color: #fff;
-	text-align: center;
-	background-color: #131313;
-	border-radius: 50%;
-	height: 2em;
-	width: 2em;
-	line-height: 2em;
-	position: absolute;
-	left: 0.3em;
-	top: 0.3em;
-}
-
-#skills li::after {
-	content: '';
-	background-color: #fff;
-	display: block;
-	height: 2.6em;
-	width: 0;
-	position: absolute;
-	left: 100%;
-	top: 0;
-	transform: skewY(30deg);
-	transform-origin: 0 0;
-	transition: 0.5s ease-out all;
-	box-shadow: 1px 1px rgba(255, 255, 255, 0.15);
-}
-
-#skills li.anim.ated::after {
-	width: 38%;
-}
-
-#skills li a i {
-	text-transform: uppercase;
-	text-decoration: none;
-	transition: 0.3s all ease;
-}
-
-#skills li a:hover {
-	border-bottom: 1px solid black;
-}
-
-@keyframes moveout {
-	0% {
-		width: 2.6em;
-		overflow: hidden
-	}
-	100% {
-		width: 62%
-	}
-}
-
-@keyframes diagon {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 38%;
-	}
-}
-#div2 {
-    border-bottom: 25px solid #black;
-    border-right: 25px solid transparent;
-    height: 0;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-	left: 0;
-}
-#div2::after {
-    content: '';
-    display: block;
-    border-bottom: 25px solid #black;
-    border-right: 25px solid transparent;
-    height: 0;
-    width: 75%;
-    position: absolute;
-    bottom: 100%;
-}
-#div2::before {
-    content: '';
-    display: block;
-    border-bottom: 25px solid #black;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    height: 0;
-    width: 35%;
-    position: absolute;
-    top: -50px;
-    left: calc(75% - (35% + 50px));
-}
-*/
 /*Portfolio*/
-#portfolio h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-	font-weight: bold;
-}
-
 #portfolio {
-  padding: 7em 0;
+  padding: 6% 0;
+	/*background-color: #FCEEE3;#D2F9E1*/
 	background-color: #FFFFFF;
 }
 
-#portfolio .container .row {
-	background-color: #FCEEE3;
-	padding: 2.7em 60px;
+#portfolio hr {
+  margin-bottom: 4%;
 }
 
 #portfolio .btn {
@@ -387,21 +269,15 @@ h1.title{
 	border-radius: 25px;
 	background-color: #b1b6b8;
 	color: #FFFFFF;
-	-webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
-	-moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-
-}
-
-#portfolio .portfolio-title {
-	padding: 2em;
-	display: inline-block;
-	margin-bottom: 1em;
 }
 
 #portfolio .item {
 	cursor: pointer;
-	margin-bottom: 4em;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -417,7 +293,7 @@ h1.title{
 
 #portfolio p {
 	color: #333;
-	font-size: 16px;
+	letter-spacing: 2px;
 }
 
 #portfolio a {
@@ -443,18 +319,36 @@ div#labcar {
 	background-image: url(../img/labcar.png);
 }
 
-/*contact*/
-#contact {
-	background-color: #ffffff;
-	padding-top: 4.5em;
-	padding-bottom: 5em;
+/*Acknowledgments*/
+#acknowledgments {
+	background-color: #EAEAEA;
+	color: #333;
+	padding-top: 6%;
+	padding-bottom: 7%;
 }
 
-#contact h2 {
-	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	font-weight: bold;
+#acknowledgments hr {
+	margin-bottom: 5%;
+}
+
+#acknowledgments .card img {
+	width: 40%;
+	margin: 4rem auto;
+}
+
+#acknowledgments h4, p {
+	margin: 2rem auto;
+	letter-spacing: 2px;
+}
+
+/*Contact*/
+#contact {
+	background-color: #ffffff;
+	padding: 6% 0;
+}
+
+#contact hr {
+	margin-bottom: 5%;
 }
 
 #contact a {
@@ -479,12 +373,13 @@ div#labcar {
 footer.container-fluid {
 	background-color: #b1b6b8;
 	color: #ffffff;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 footer h6 {
-	letter-spacing: 1.5px;
+	letter-spacing: 2px;
+	line-height: 2rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -494,6 +389,10 @@ footer h6 {
 
 	header #nav-logo {
 		margin-left: 12px;
+	}
+
+	#skills, #portfolio, #acknowledgments, #contact {
+		padding: 5rem 0;
 	}
 
 	#home {
@@ -511,11 +410,19 @@ footer h6 {
 		width: 50%;
 	}
 
+	#skills .row-1 {
+		padding-top: 5rem;
+	}
+
 	#skills .item {
 		padding-top: 1em;
 		padding-bottom: 1em;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	#portfolio .item {
+		margin: 3rem auto;
 	}
 
 	#portfolio .item-img {
@@ -532,7 +439,7 @@ footer h6 {
 		text-align: center;
 	}
 
-	#portfolio .portfolio-title {
+	#portfolio h2 {
 		padding-bottom: 0;
 	}
 
@@ -545,24 +452,4 @@ footer h6 {
 		letter-spacing: 0.1rem;
 	}
 
-}
-
-/*Yape*/
-.carousel {
-  height: 100vh;
-  width: 100%;
-  overflow:hidden;
-}
-.carousel .carousel-inner,
-.carousel .item {
-  height:100%;
-	width: 100%;
-}
-
-.carousel-control .glyphicon {
-	color: #333131;
-}
-
-.carousel-control {
-	width: 2em;
 }
