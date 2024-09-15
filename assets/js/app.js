@@ -27,7 +27,7 @@ $(document).ready(function(){
   position -= 1;
   $("body").css({ "background-position":+ position +"px 0px" })
   }, 35);
-
+  /*
 	$(window).scroll(function() {
 	  $(".slideanim").each(function(){
 	    var pos = $(this).offset().top;
@@ -37,7 +37,7 @@ $(document).ready(function(){
 	    }
 	  });
 	});
-
+  */
 	$("#flash").on('click', function(event) {
 		window.open('https://flordeciruela.github.io/Flash-bitacora/');
 	});

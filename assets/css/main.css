@@ -20,7 +20,7 @@ h2 {
 	font-weight: bold;
 }
 
-/*Deslizar elementos*/
+/*Deslizar elementos
 .slideanim {visibility:hidden;}
 .slide {
   animation-name: slide;
@@ -51,7 +51,7 @@ h2 {
     -webkit-transform: translateY(0%);
   }
 }
-
+*/
 .cyan {
   color: #1BCBFF;
 }
@@ -126,7 +126,7 @@ nav.navbar-inverse {
 	letter-spacing: 4px;
   overflow:hidden;
   white-space:nowrap;
-  width: 17em;
+  width: 10em;
   -webkit-animation: type 1s steps(6), blink 1s linear infinite;
   margin: auto;
 	margin-bottom: 9em;
@@ -176,19 +176,21 @@ h1.title{
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 0;
-  padding-top: 14em;
+  padding-top: 16em;
 	-webkit-animation: animatedBackground 2s linear infinite;
 }
 
 #home .row {
 	margin: 0;
+	/*
 	background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	*/
 	background-size: 550px 550px, 280px 280px, 250px 250px, 150px 150px;
 }
 
 #home h1 {
 	font-family: 'Gruppo', sans-serif;
-	font-size:10vw;
+	font-size:6vw;
 	color: #ffffff;
 	letter-spacing: 0.10em;
 }
@@ -219,8 +221,12 @@ h1.title{
 }
 
 #about .img-circle {
+	/*
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	*/
+	margin: 0 auto;
+	text-align: center;
 }
 
 /*skills*/
@@ -312,11 +318,11 @@ div#pinterest:hover {
 }
 
 div#yape {
-	background-image: url(../img/yape-1.png);
+	background-image: url(../img/yape-1.jpg);
 }
 
 div#labcar {
-	background-image: url(../img/labcar.png);
+	background-image: url(../img/labcar.jpg);
 }
 
 /*Acknowledgments*/
