@@ -126,7 +126,7 @@ nav.navbar-inverse {
 	letter-spacing: 4px;
   overflow:hidden;
   white-space:nowrap;
-  width: 10em;
+  width: 9.5em;
   -webkit-animation: type 1s steps(6), blink 1s linear infinite;
   margin: auto;
 	margin-bottom: 9em;
@@ -158,7 +158,7 @@ h1.title{
 }
 @keyframes blink{
   0%,100%{border-color:transparent}
-  50%{border-color: #1BCBFF}
+  50%{border-color: #F7EF7E}
 }
 
 /*Home*/
@@ -202,8 +202,8 @@ h1.title{
 
 /*About*/
 #about {
-  padding-top: 4em;
-	padding-bottom: 4em;
+  padding-top: 6em;
+	padding-bottom: 8em;
 	background-color: #FFFFFF;
 }
 
@@ -227,6 +227,8 @@ h1.title{
 	*/
 	margin: 0 auto;
 	text-align: center;
+	/*box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;*/
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /*skills*/
@@ -263,7 +265,7 @@ h1.title{
 #portfolio {
   padding: 6% 0;
 	/*background-color: #FCEEE3;#D2F9E1*/
-	background-color: #FFFFFF;
+	background-color: #f8f8f8;
 }
 
 #portfolio hr {
@@ -272,12 +274,22 @@ h1.title{
 
 #portfolio .btn {
 	border: none;
-	border-radius: 25px;
+	/*border-radius: 25px;
 	background-color: #b1b6b8;
 	color: #FFFFFF;
 	-webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	*/
+	border-radius: 32px;
+	box-shadow: 0px 0.8px 1.5px 0px rgba(0, 0, 0, 0.10), 0px 6px 12px 0px rgba(0, 0, 0, 0.20);
+	transition: all 0.4s ease 0s;
+	background-color: #F7EF7E;
+}
+
+#portfolio .btn:hover {
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10), 0px 9px 15px 0px rgba(0, 0, 0, 0.20);
+	transition: all 0.4s ease 0s;
 }
 
 #portfolio .item {
@@ -294,7 +306,15 @@ h1.title{
 
 #portfolio .item-img {
 	background-size: cover;
+	background-position: center;
 	height: 300px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+	transition: all 0.4s ease 0s;
+}
+
+#portfolio .item-img:hover {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px;
+	transition: all 0.4s ease 0s;
 }
 
 #portfolio p {
@@ -327,7 +347,8 @@ div#labcar {
 
 /*Acknowledgments*/
 #acknowledgments {
-	background-color: #EAEAEA;
+	/*background-color: #DAE4FF;*/
+	background-color: #ECEFF6;
 	color: #333;
 	padding-top: 6%;
 	padding-bottom: 7%;
@@ -349,7 +370,7 @@ div#labcar {
 
 /*Contact*/
 #contact {
-	background-color: #ffffff;
+	background-color: #f8f8f8;
 	padding: 6% 0;
 }
 
@@ -362,8 +383,9 @@ div#labcar {
 	color: #333131;
 }
 
-#contact a:hover {
-	color: #1BCBFF;
+#contact a:hover i,
+#contact a:hover span {
+	transform: rotateY(360deg);
 }
 
 #contact .glyphicon-chevron-up {
@@ -373,11 +395,17 @@ div#labcar {
 #contact i {
 	font-size: 3.5em;
 	margin: 0.4em;
+	transition: all 0.5s ease 0s;
+}
+
+#contact span {
+	transition: all 0.5s ease 0s;
 }
 
 /*footer*/
 footer.container-fluid {
-	background-color: #b1b6b8;
+	/*background-color: #b1b6b8;*/
+	background-color: #333;
 	color: #ffffff;
 	padding-top: 10px;
 	padding-bottom: 5px;
