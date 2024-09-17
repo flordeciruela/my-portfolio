@@ -8,7 +8,7 @@ body {
 }
 
 hr.hr-title {
-	border-top: 1px solid #333;
+	border-top: 1px solid #F7EF7E;
 	width: 5rem;
 	margin-bottom: 8%;
 }
@@ -102,7 +102,8 @@ nav.navbar-inverse {
   font-size: 11px !important;
   line-height: 1.42857143 !important;
   letter-spacing: 2px;
-	background-color: rgba(34, 34, 34, 0.8);
+	/*background-color: rgba(34, 34, 34, 0.8);*/
+	background-color: #333;
 	border: none;
 }
 
@@ -111,7 +112,7 @@ nav.navbar-inverse {
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-	color: #bbb7b7;
+	color: #F7EF7E;
 }
 
 .navbar-inverse .navbar-nav .active a {
@@ -171,6 +172,7 @@ h1.title{
 #home {
   height: 662px;
   padding: 0;
+	background-color: #FFFFFF;
   background-image: url(../img/fondo4.png);
   background-position: -10% 100%;
   background-size: cover;
@@ -228,7 +230,7 @@ h1.title{
 	margin: 0 auto;
 	text-align: center;
 	/*box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;*/
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /*skills*/
@@ -265,7 +267,8 @@ h1.title{
 #portfolio {
   padding: 6% 0;
 	/*background-color: #FCEEE3;#D2F9E1*/
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
+	background-color: #ECEFF6;
 }
 
 #portfolio hr {
@@ -282,14 +285,15 @@ h1.title{
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	*/
 	border-radius: 32px;
-	box-shadow: 0px 0.8px 1.5px 0px rgba(0, 0, 0, 0.10), 0px 6px 12px 0px rgba(0, 0, 0, 0.20);
 	transition: all 0.4s ease 0s;
-	background-color: #F7EF7E;
+	background-color: #333;
+	color: #FFFFFF;
+	font-size: 14px;
 }
 
 #portfolio .btn:hover {
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10), 0px 9px 15px 0px rgba(0, 0, 0, 0.20);
 	transition: all 0.4s ease 0s;
+	background-color: #444444;
 }
 
 #portfolio .item {
@@ -307,14 +311,9 @@ h1.title{
 #portfolio .item-img {
 	background-size: cover;
 	background-position: center;
+	border-radius: 4px;
 	height: 300px;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-	transition: all 0.4s ease 0s;
-}
-
-#portfolio .item-img:hover {
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px;
-	transition: all 0.4s ease 0s;
+	box-shadow: 0px 0.1px 0.3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
 }
 
 #portfolio p {
@@ -348,7 +347,7 @@ div#labcar {
 /*Acknowledgments*/
 #acknowledgments {
 	/*background-color: #DAE4FF;*/
-	background-color: #ECEFF6;
+	background-color: #FFFFFF;
 	color: #333;
 	padding-top: 6%;
 	padding-bottom: 7%;
@@ -370,7 +369,7 @@ div#labcar {
 
 /*Contact*/
 #contact {
-	background-color: #f8f8f8;
+	background-color: #ECEFF6;
 	padding: 6% 0;
 }
 
@@ -407,13 +406,19 @@ footer.container-fluid {
 	/*background-color: #b1b6b8;*/
 	background-color: #333;
 	color: #ffffff;
-	padding-top: 10px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 footer h6 {
 	letter-spacing: 2px;
 	line-height: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	#home{
+		height: auto;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -430,10 +435,28 @@ footer h6 {
 	}
 
 	#home {
-	  height: auto;
+		background-color: #333;
+		background-image: none;
 	  background-position: center;
-		padding-top: 5em;
+		padding-top: 2em;
 		margin-top: 3em;
+	}
+
+	.text-typing {
+		margin-bottom: 5em;
+		font-size: 16px;
+	}
+
+	#home h1 {
+		font-size:8vw;
+	}
+
+	#about {
+		padding: 2em 0;
+	}
+
+	#about p {
+		font-size: 14px;
 	}
 
 	#about .row {
@@ -455,12 +478,20 @@ footer h6 {
 		margin-bottom: 2rem;
 	}
 
+	#portfolio {
+		padding: 2em 0;
+	}
+
 	#portfolio .item {
 		margin: 3rem auto;
 	}
 
 	#portfolio .item-img {
 		margin-top: 1em;
+	}
+
+	#portfolio .btn {
+		font-size: 14px;
 	}
 
 	#portfolio p {
@@ -482,8 +513,25 @@ footer h6 {
 		margin-bottom: 2rem;
 	}
 
+	#acknowledgments {
+		padding: 2em 0;
+	}
+
+	#contact {
+		padding: 2em 0;
+	}
+
 	#contact p {
 		letter-spacing: 0.1rem;
+	}
+
+	#contact i {
+		font-size: 2.5em;
+		margin: 0 16px;
+	}
+
+	#footer h6 {
+		font-size: 11px;
 	}
 
 }
