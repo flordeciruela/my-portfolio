@@ -210,6 +210,7 @@ h1.title{
 }
 
 #about .row {
+	padding: 0 15px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -227,8 +228,7 @@ h1.title{
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	*/
-	margin: 0 auto;
-	text-align: center;
+	float: right;
 	/*box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;*/
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -284,11 +284,12 @@ h1.title{
 	-moz-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 	*/
-	border-radius: 32px;
+	border-radius: 100px;
 	transition: all 0.4s ease 0s;
 	background-color: #333;
 	color: #FFFFFF;
 	font-size: 14px;
+	padding: 12px 24px;
 }
 
 #portfolio .btn:hover {
@@ -297,11 +298,10 @@ h1.title{
 }
 
 #portfolio .item {
-	cursor: pointer;
 	margin-top: 5%;
 	margin-bottom: 5%;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 #portfolio .item div {
@@ -309,12 +309,20 @@ h1.title{
 }
 
 #portfolio .item-img {
+	cursor: pointer;
 	background-size: cover;
 	background-position: center;
-	border-radius: 4px;
+	border-radius: 12px;
 	height: 300px;
+	transition: all 0.4s ease 0s;
 	box-shadow: 0px 0.1px 0.3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
 }
+
+#portfolio .item-img:hover {
+	transition: all 0.4s ease 0s;
+	box-shadow: 0px 0.1px 0.3px 0px rgba(0, 0, 0, 0.10), 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+}
+
 
 #portfolio p {
 	color: #333;
@@ -484,6 +492,8 @@ footer h6 {
 
 	#portfolio .item {
 		margin: 3rem auto;
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 
 	#portfolio .item-img {
