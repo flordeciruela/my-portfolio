@@ -60,8 +60,7 @@ h2 {
   color: #FFFFFF;
 }
 
-.fa-angle-double-down,
-.glyphicon-chevron-up {
+.fa-angle-double-down {
 	font-size: 1.8em;
 	padding: 10px;
 	display: inline-block;
@@ -392,11 +391,18 @@ div#labcar {
 
 #contact a:hover i,
 #contact a:hover span {
-	transform: rotateY(360deg);
+
 }
 
 #contact .glyphicon-chevron-up {
 	margin-top: 1.5em;
+	color: #FFFFFF;
+	background-color: #333131;
+	border-radius: 100%;
+	letter-spacing: normal;
+	font-size: 1.8em;
+	padding: 10px;
+	display: inline-block;
 }
 
 #contact i {
