@@ -1,23 +1,28 @@
 * {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 4px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
 }
 
 body {
 	background-color: #ffffff;
 }
 
+hr {
+	margin-top: 16px;
+}
+
 hr.hr-title {
 	border-top: 1px solid #F7EF7E;
 	width: 5rem;
-	margin-bottom: 8%;
+	margin-bottom: 6%;
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 4px;
 	font-weight: bold;
+	font-size: 24px;
+	color: #444444;
 }
 
 /*Deslizar elementos
@@ -100,9 +105,8 @@ nav.navbar-inverse {
   text-transform: uppercase;
   font-size: 11px !important;
   line-height: 1.42857143 !important;
-  letter-spacing: 2px;
 	/*background-color: rgba(34, 34, 34, 0.8);*/
-	background-color: #333;
+	background-color: #333 !important;
 	border: none;
 }
 
@@ -112,40 +116,45 @@ nav.navbar-inverse {
 
 .navbar-inverse .navbar-nav li a:hover {
 	color: #F7EF7E;
+	background-color: #333 !important;
 }
 
 .navbar-inverse .navbar-nav .active a {
-	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	background-color: #333 !important;
+	color: #F7EF7E;
 }
 
-.text-typing{
+.navbar-inverse .navbar-nav .active a:hover {
+	background-color: #333 !important;
+}
+
+.text-typing {
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
-	letter-spacing: 4px;
+	letter-spacing: 5px;
   overflow:hidden;
   white-space:nowrap;
-  width: 9.5em;
+  width: 14em;
   -webkit-animation: type 1s steps(6), blink 1s linear infinite;
-  margin: auto;
-	margin-bottom: 9em;
-  padding:0;
+  margin: 0;
   border-right: .1em solid;
   line-height: 2em;
+	text-align: left;
 }
 
 h1.title{
   color: #ffffff;
   font-size: 100px;
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 20px;
+	font-family: 'Activ', sans-serif;
 	font-weight: bold;
 }
 
 .text-typing:nth-child(2){
   -webkit-animation: type2 3s steps(21), blink 1s linear infinite;
-	padding: 0;
+	padding:0 0 0 3px;
 }
 
 @keyframes type{
@@ -169,15 +178,18 @@ h1.title{
 }
 
 #home {
+	/*
   height: 662px;
-  padding: 0;
-	background-color: #FFFFFF;
+	*/
+  padding: 9em 0;
+	background-color: #333;
+	/*
   background-image: url(../img/fondo4.png);
   background-position: -10% 100%;
   background-size: cover;
   background-repeat: no-repeat;
+	*/
   margin-bottom: 0;
-  padding-top: 16em;
 	-webkit-animation: animatedBackground 2s linear infinite;
 }
 
@@ -190,10 +202,10 @@ h1.title{
 }
 
 #home h1 {
-	font-family: 'Gruppo', sans-serif;
-	font-size:6vw;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4vw;
 	color: #ffffff;
-	letter-spacing: 0.10em;
+	text-align: left;
 }
 
 #home a {
@@ -217,19 +229,19 @@ h1.title{
 
 #about p {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1.5px;
   font-size: 16px;
 	color: #333131;
 }
 
-#about .img-circle {
+#about .img-profile {
 	/*
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	*/
 	float: right;
 	/*box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;*/
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	box-shadow: 0px 0px 40px 0px rgba(1, 6, 66, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
+	border-radius: 36px;
 }
 
 /*skills*/
@@ -270,8 +282,8 @@ h1.title{
 	background-color: #ECEFF6;
 }
 
-#portfolio hr {
-  margin-bottom: 4%;
+#portfolio h3 {
+  color: #444444;
 }
 
 #portfolio .btn {
@@ -289,6 +301,7 @@ h1.title{
 	color: #FFFFFF;
 	font-size: 14px;
 	padding: 12px 24px;
+	letter-spacing: 2px;
 }
 
 #portfolio .btn:hover {
@@ -309,23 +322,22 @@ h1.title{
 
 #portfolio .item-img {
 	cursor: pointer;
-	background-size: cover;
+	background-size: 100%;
 	background-position: center;
-	border-radius: 12px;
+	border-radius: 36px;
 	height: 300px;
 	transition: all 0.4s ease 0s;
-	box-shadow: 0px 0.1px 0.3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 0px 40px 0px rgba(52, 60, 175, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.20);
 }
 
 #portfolio .item-img:hover {
 	transition: all 0.4s ease 0s;
-	box-shadow: 0px 0.1px 0.3px 0px rgba(0, 0, 0, 0.10), 0px 4px 8px 0px rgba(0, 0, 0, 0.20);
+	background-size: 102%;
 }
 
 
 #portfolio p {
 	color: #333;
-	letter-spacing: 2px;
 }
 
 #portfolio a {
@@ -371,7 +383,6 @@ div#labcar {
 
 #acknowledgments h4, p {
 	margin: 2rem auto;
-	letter-spacing: 2px;
 }
 
 /*Contact*/
@@ -425,13 +436,17 @@ footer.container-fluid {
 }
 
 footer h6 {
-	letter-spacing: 2px;
 	line-height: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
 	#home{
 		height: auto;
+	}
+
+	#portfolio .item-img {
+		background-repeat: no-repeat;
+		height: 212px;
 	}
 }
 
@@ -441,7 +456,15 @@ footer h6 {
 	}
 
 	header #nav-logo {
-		margin-left: 12px;
+		margin-left: 24px;
+	}
+
+	.navbar-inverse .navbar-nav li a {
+		padding: 12px 24px;
+	}
+
+	.text-typing {
+		width: 14.5em;
 	}
 
 	#skills, #portfolio, #acknowledgments, #contact {
@@ -453,6 +476,7 @@ footer h6 {
 		background-image: none;
 	  background-position: center;
 		padding-top: 2em;
+		padding-bottom: 0;
 		margin-top: 3em;
 	}
 
@@ -498,12 +522,14 @@ footer h6 {
 
 	#portfolio .item {
 		margin: 3rem auto;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 24px;
+		padding-right: 24px;
 	}
 
 	#portfolio .item-img {
 		margin-top: 1em;
+		background-repeat: no-repeat;
+		height: 204px;
 	}
 
 	#portfolio .btn {
@@ -512,7 +538,6 @@ footer h6 {
 
 	#portfolio p {
 		font-size: 1.5rem;
-		letter-spacing: 2px;
 	}
 
 	#portfolio .container .row {
@@ -537,13 +562,13 @@ footer h6 {
 		padding: 2em 0;
 	}
 
-	#contact p {
-		letter-spacing: 0.1rem;
-	}
-
 	#contact i {
 		font-size: 2.5em;
 		margin: 0 16px;
+	}
+
+	#contact .glyphicon-chevron-up {
+		font-size: 1em;
 	}
 
 	#footer h6 {
